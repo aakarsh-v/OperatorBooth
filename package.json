@@ -1,0 +1,42 @@
+{
+  "name": "meera-railway-delay-api",
+  "version": "1.0.0",
+  "description": "Meera's Railway Delay API - x402 paid Indian Railways delay notice parser",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "buyer": "ts-node src/buyer.ts",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "x402",
+    "railway",
+    "indian-railways",
+    "usdc",
+    "base-sepolia",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@x402/core": "^2.27.0",
+    "@x402/evm": "^2.27.0",
+    "@x402/express": "^2.27.0",
+    "@x402/fetch": "^2.27.0",
+    "dotenv": "^18.0.4",
+    "express": "^5.2.1",
+    "viem": "^2.56.9",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "@types/supertest": "^7.2.1",
+    "supertest": "^7.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}
